@@ -1,0 +1,53 @@
+@use '../util' as *;
+
+:root {
+  --white: #ffffff;
+
+  // Beige
+  --beige-500: #98908b;
+  --beige-100: #f8f4f0;
+
+  // Greys
+  --grey-900: #201f24;
+  --grey-500: #696868;
+  --grey-300: #b3b3b3;
+  --grey-100: #f2f2f2;
+
+  // Secondary colors
+  --green: #277c78;
+  --yellow: #f2cdac;
+  --cyan: #82c9c7;
+  --navy: #626070;
+  --red: #c94736;
+  --purple-200: #826cb0;
+
+  // Other colors
+  --purple-100: #af81ba;
+  --turquoise: #597c7c;
+  --brown: #93674f;
+  --magenta: #934f6f;
+  --blue: #3f82b2;
+  --navy-grey: #97a0ac;
+  --army-green: #7f9161;
+  --gold: #cab361;
+  --orange: #be6c49;
+
+  // Typography
+  --ff-primary: 'Public Sans', sans-serif;
+  --text-preset-1: normal normal 700 #{rem(32)} / 120% var(--ff-primary);
+  --text-preset-2: normal normal 700 #{rem(20)} / 120% var(--ff-primary);
+  --text-preset-3: normal normal 700 #{rem(16)} / 150% var(--ff-primary);
+  --text-preset-4: normal normal 400 #{rem(14)} / 150% var(--ff-primary);
+  --text-preset-4-b: normal normal 700 #{rem(14)} / 150% var(--ff-primary);
+  --text-preset-5: normal normal 400 #{rem(12)} / 150% var(--ff-primary);
+  --text-preset-5-b: normal normal 700 #{rem(12)} / 150% var(--ff-primary);
+
+  // Transitions
+  @media (prefers-reduced-motion: no-preference) {
+    --transition: all 0.3s ease-in-out;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    --transition: none;
+  }
+}

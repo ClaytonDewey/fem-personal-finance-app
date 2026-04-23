@@ -1,0 +1,13 @@
+// Abstracts
+@use 'abstracts';
+
+// Base
+@use 'base';
+
+// Components
+@use 'components';
+
+h1 {
+  font: var(--text-preset-3);
+  color: var(--gold);
+}
