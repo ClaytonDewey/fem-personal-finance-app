@@ -27,7 +27,9 @@
     border-color: var(--grey-900);
     color: var(--white);
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus-visible {
       background-color: var(--grey-500);
       border-color: var(--grey-500);
     }
@@ -38,7 +40,9 @@
     border-color: var(--beige-100);
     color: var(--grey-900);
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus-visible {
       background-color: transparent;
       border-color: var(--beige-500);
     }
@@ -49,9 +53,27 @@
     border-color: var(--red);
     color: var(--white);
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus-visible {
       background-color: hsl(from var(--red) h s 70%);
       border-color: hsl(from var(--red) h s 70%);
+    }
+  }
+
+  &-tertiary {
+    color: var(--grey-500);
+    gap: rem(12);
+
+    &:hover,
+    &:active,
+    &:focus-visible {
+      color: var(--grey-900);
+
+      svg path {
+        fill: var(--grey-900);
+        transition: var(--transition);
+      }
     }
   }
 }
