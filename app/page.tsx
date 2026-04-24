@@ -18,7 +18,7 @@ export default function Home() {
 
       <div>
         <Image
-          src='/images/icon-nav-budgets.svg'
+          src='/images/icon-caret-right.svg'
           alt='authentication'
           width={100}
           height={100}
