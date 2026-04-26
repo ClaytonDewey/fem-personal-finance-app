@@ -8,6 +8,20 @@
 @use 'components';
 
 h1 {
-  font: var(--text-preset-3);
-  color: var(--gold);
+  font: var(--text-preset-1);
+  color: var(--grey-900);
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+  padding: 24px 16px;
 }
