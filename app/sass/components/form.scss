@@ -2,12 +2,70 @@
 
 .form {
   &-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: var(--white);
-    width: 100%;
+    width: 91.5%;
+    max-width: rem(560);
     border-radius: rem(12);
     padding: rem(24) rem(20);
+    display: flex;
+    flex-direction: column;
+    gap: rem(32);
   }
+
+  fieldset {
+    border: none;
+
+    div + div {
+      margin-block-start: rem(16);
+    }
+  }
+
   label {
     display: block;
+    font: var(--text-preset-5-b);
+    color: var(--grey-500);
+  }
+
+  input {
+    display: flex;
+    align-items: center;
+    padding-inline: rem(20);
+    height: rem(45);
+    width: 100%;
+    border: 1px solid var(--beige-500);
+    border-radius: rem(8);
+  }
+
+  .btn {
+    width: 100%;
+    margin-block: rem(32);
+  }
+
+  p {
+    font: var(--text-preset-4);
+    color: var(--grey-500);
+    text-align: center;
+
+    a {
+      font: var(--text-preset-4-b);
+      color: var(--grey-900);
+    }
+  }
+
+  @include breakpoint(tablet) {
+    &-wrapper {
+      padding: rem(32);
+    }
+  }
+
+  @include breakpoint(desktop) {
+    &-wrapper {
+      position: initial;
+      transform: none;
+    }
   }
 }

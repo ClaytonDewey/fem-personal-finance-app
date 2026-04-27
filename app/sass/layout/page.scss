@@ -1,0 +1,13 @@
+@use '../util' as *;
+
+.page-wrapper {
+  position: relative;
+  height: 100vh;
+
+  @include breakpoint(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+}

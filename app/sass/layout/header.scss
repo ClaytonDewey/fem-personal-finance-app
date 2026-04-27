@@ -1,0 +1,17 @@
+@use '../util' as *;
+
+.hero {
+  width: 100%;
+  background-color: var(--grey-900);
+  border-bottom-right-radius: rem(12);
+  border-bottom-left-radius: rem(12);
+  padding: rem(24) rem(40);
+
+  &-body {
+    display: none;
+  }
+
+  svg {
+    margin-inline: auto;
+  }
+}
