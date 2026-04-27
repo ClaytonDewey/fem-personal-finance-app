@@ -6,13 +6,16 @@ export default function Home() {
   return (
     <div className='page-wrapper'>
       <header className='hero'>
-        <Icon name='logo' />
-        <div className='hero-body'>
-          <h2>Keep track of your money and save for your future</h2>
-          <p>
-            Personal finance app puts you in control of your spending. Track
-            transactions, set budgets and add to savings pots easily.
-          </p>
+        <div className='hero-wrapper'>
+          <Icon name='logo' />
+          <Icon name='authentication' />
+          <div className='hero-body'>
+            <h2>Keep track of your money and save for your future</h2>
+            <p>
+              Personal finance app puts you in control of your spending. Track
+              transactions, set budgets and add to savings pots easily.
+            </p>
+          </div>
         </div>
       </header>
       <main>

@@ -1,17 +1,33 @@
 @use '../util' as *;
 
 .hero {
-  width: 100%;
-  background-color: var(--grey-900);
-  border-bottom-right-radius: rem(12);
-  border-bottom-left-radius: rem(12);
-  padding: rem(24) rem(40);
+  &-wrapper {
+    width: 100%;
+    background-color: var(--grey-900);
+    border-bottom-right-radius: rem(12);
+    border-bottom-left-radius: rem(12);
+    padding: rem(24) rem(40);
 
-  &-body {
-    display: none;
+    &-body {
+      display: none;
+    }
+
+    svg {
+      margin-inline: auto;
+    }
   }
+  @include breakpoint(desktop) {
+    max-width: rem(600);
+    padding: rem(20);
 
-  svg {
-    margin-inline: auto;
+    &-wrapper {
+      border-radius: rem(12);
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 0;
+      }
+    }
   }
 }

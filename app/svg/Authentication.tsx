@@ -93,7 +93,7 @@ const AuthenticationSvg = () => {
           fill='#fff'
         />
       </mask>
-      <g clip-path='url(#a)'>
+      <g clipPath='url(#a)'>
         <path d='m0 0h560v920h-560z' fill='#201f24' />
         <path d='m328 124.5 573-339.5v180.5497l-499 179.4503z' fill='#f2cdac' />
         <path
