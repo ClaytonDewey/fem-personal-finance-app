@@ -38,9 +38,15 @@ const SideNav = () => {
         <aside className='sidenav__wrapper'>
           <div>
             <div>
-              <Link href='/'>
-                <Icon name='logo' />
-              </Link>
+              <div className='logo'>
+                <Link href='/'>
+                  {isSidebarExpanded ? (
+                    <Icon name='logo' />
+                  ) : (
+                    <Icon name='logo-small' />
+                  )}
+                </Link>
+              </div>
               <div>
                 {navItems.map((item, idx) => (
                   <Fragment key={idx}>

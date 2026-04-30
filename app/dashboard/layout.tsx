@@ -4,7 +4,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className='dashboard'>
       <SideNav />
-      <div>{children}</div>
+      <div className='dashboard-wrapper'>{children}</div>
     </div>
   );
 }

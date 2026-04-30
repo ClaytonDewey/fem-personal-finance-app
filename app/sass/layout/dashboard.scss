@@ -3,4 +3,8 @@
 .dashboard {
   display: flex;
   height: 100vh;
+
+  &-wrapper {
+    padding: rem(40);
+  }
 }

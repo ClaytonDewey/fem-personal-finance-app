@@ -1,12 +1,24 @@
 @use '../util' as *;
-
+/**
+ * TODO: work on animation delay for links between open & closed state
+ */
 .sidenav {
   background-color: var(--grey-900);
   border-top-right-radius: rem(16);
   border-bottom-right-radius: rem(16);
-  padding-inline-end: rem(24);
-  width: rem(68);
+  width: rem(74);
+  transition: var(--transition);
   height: 100%;
+  padding-inline-end: rem(8);
+
+  .logo {
+    padding-block: rem(40);
+    margin-block-end: rem(24);
+
+    svg {
+      margin-inline: auto;
+    }
+  }
 
   &__wrapper {
     display: flex;
@@ -29,6 +41,7 @@
     transition: var(--transition);
     border-top-right-radius: rem(12);
     border-bottom-right-radius: rem(12);
+    margin-block-end: rem(1);
 
     &.active,
     &:hover {
@@ -52,7 +65,13 @@
   }
 
   &.open {
+    transition: var(--transition);
     width: rem(300);
+    padding-inline-end: rem(24);
+
+    .logo {
+      padding-inline: rem(32);
+    }
 
     .sidenav-link {
       gap: rem(16);
