@@ -1,0 +1,94 @@
+@use '../util' as *;
+
+.sidenav {
+  background-color: var(--grey-900);
+  border-top-right-radius: rem(16);
+  border-bottom-right-radius: rem(16);
+  padding-inline-end: rem(24);
+  width: rem(68);
+  height: 100%;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: center;
+    color: var(--grey-300);
+    text-decoration: none;
+    font: var(--text-preset-3);
+    height: rem(56);
+    border-left: rem(4) solid transparent;
+    box-sizing: border-box;
+    transition: var(--transition);
+    border-top-right-radius: rem(12);
+    border-bottom-right-radius: rem(12);
+
+    &.active,
+    &:hover {
+      background-color: var(--beige-100);
+      color: var(--grey-900);
+      border-left-color: var(--green);
+      transition: var(--transition);
+
+      svg path {
+        fill: var(--green);
+        transition: var(--transition);
+      }
+    }
+  }
+
+  .button-container {
+    button svg {
+      transition: var(--transition);
+      transform: rotate(180deg);
+    }
+  }
+
+  &.open {
+    width: rem(300);
+
+    .sidenav-link {
+      gap: rem(16);
+      padding-inline: rem(28);
+      justify-content: flex-start;
+    }
+
+    .button-container {
+      button svg {
+        transition: var(--transition);
+        transform: rotate(0deg);
+      }
+    }
+  }
+}
+
+.button-container {
+  position: relative;
+  margin-block-start: calc(90vh-#{rem(40)});
+
+  button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: rem(16);
+    min-width: rem(24);
+    background: transparent;
+    border: none;
+    position: absolute;
+    bottom: rem(58.24);
+    left: rem(24);
+    font: var(--text-preset-3);
+    color: var(--grey-300);
+
+    svg {
+      min-height: rem(24);
+    }
+  }
+}
