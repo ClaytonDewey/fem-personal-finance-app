@@ -1,7 +1,7 @@
 const Page = () => {
   return (
     <div>
-      <h2>This is the transactions page</h2>
+      <h1>Transactions</h1>
     </div>
   );
 };

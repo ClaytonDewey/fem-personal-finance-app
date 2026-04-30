@@ -1,7 +1,7 @@
 const Page = () => {
   return (
     <div>
-      <h2>This is the recurring bills page</h2>
+      <h1>Recurring Bills</h1>
     </div>
   );
 };
